@@ -27,7 +27,7 @@ public class HelloController {
 		List<User> users = new ArrayList<>();
 		for (int i = 1; i < 5; i++) {
 			User user = new User();
-			user.setName(RandomStringUtils.random(6));
+			user.setName(RandomStringUtils.random(6).toString());
 			user.setAge(new Random().nextInt((30 - 20) + 1) + 20);
 			user.setId(RandomStringUtils.random(6).toString());
 			users.add(user);
